@@ -172,6 +172,14 @@ body {
 }
 
 /* SEÇÃO COMENTÁRIOS */
+
+.card-lateral {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; /* Borda cinza bem fininha */
+    border-radius: 8px; /* Arredondamento dos cantos igual à foto */
+    padding: 24px;
+}
+
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -376,17 +384,20 @@ body {
 /* ================= PAINEL LATERAL DIREITO ================= */
 .right-panel {
     width: 320px;
-    background-color: white;
-    border-left: 1px solid var(--border-color);
-    padding: 32px 24px;
+    background-color: transparent; 
+    border: none; 
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    overflow-y: auto;
-    flex-shrink: 0;
+    gap: 24px; /* Esse é o truque: cria o espaço vazio entre os dois quadrados */
+    padding-top: 0; 
 }
 
-.widget-title { font-size: 18px; font-weight: 800; color: var(--btn-dark-bg); margin-bottom: 20px; }
+.widget-title { 
+    font-size: 18px; 
+    font-weight: 800; 
+    color: var(--btn-dark-bg); 
+    margin-bottom: 20px; 
+}
 
 /* Informações do Projeto */
 .info-row { margin-bottom: 16px; }
@@ -415,41 +426,74 @@ body {
     padding-left: 16px;
 }
 /* Linha vertical da timeline */
+.timeline {
+    position: relative;
+    /* Removemos o padding-left fixo para controlar o alinhamento via Flexbox */
+    padding-left: 0;
+}
+
+/* Linha vertical da timeline: centralizada em 20px */
 .timeline::before {
     content: '';
     position: absolute;
-    left: 16px;
+    /* A linha deve ficar no centro do avatar-container (que tem 40px) */
+    left: 20px; 
     top: 40px; /* Começa um pouco depois do primeiro item */
     bottom: 20px;
     width: 2px;
     background-color: var(--border-color);
+    z-index: 1; /* Garante que fique atrás dos avatares */
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
+
 .timeline-item .time {
     font-size: 11px;
     color: var(--text-muted);
     text-align: right;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     display: block;
+    /* Ajuste para alinhar o tempo com o texto, não com o avatar */
+    padding-right: 10px; 
 }
+
 .timeline-content {
     display: flex;
-    gap: 12px;
-    align-items: flex-start;
+    gap: 16px;
+    align-items: flex-start; /* Alinha o texto ao topo da imagem */
 }
+
+/* O CONTAINER É O SEGREDO: Largura fixa e Flex para centralizar */
+.avatar-container {
+    width: 40px; /* Mesma largura do padding-left da linha anterior */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    flex-shrink: 0; /* Impede que o container esmague */
+    position: relative;
+    z-index: 2; /* Fica à frente da linha vertical */
+}
+
 .avatar-small {
-    width: 30px;
-    height: 30px;
+    width: 32px; /* Tamanho da imagem, menor que o container */
+    height: 32px;
     border-radius: 50%;
-    border: 2px solid white; /* Cobre a linha da timeline */
-    z-index: 1;
+    /* Borda branca grossa para cobrir a linha quando passar por trás */
+    border: 3px solid white; 
+    object-fit: cover;
 }
-.timeline-content p {
+
+.timeline-text {
+    flex: 1; /* Ocupa o resto do espaço */
     font-size: 13px;
-    line-height: 1.4;
+    line-height: 1.5;
     color: var(--text-main);
+    /* Pequeno ajuste para o texto não ficar colado na imagem */
+    margin-top: -2px; 
+}
+
+.timeline-text strong {
+    font-weight: 700;
 }
