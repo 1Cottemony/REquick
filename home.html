@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requick - Dashboard E-commerce Alpha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="img/logo-requick.png" alt="Requick" class="logo-imagem">
+        </div>
+        
+        <nav class="menu">
+            <a href="#" class="menu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                Dashboard
+            </a>
+            <a href="#" class="menu-item active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                Projetos
+            </a>
+        </nav>
+
+        <div class="user-profile">
+            <img src="https://ui-avatars.com/api/?name=Victor+Koba&background=475569&color=fff&bold=true" class="avatar" alt="Victor Koba">
+            <div class="user-info">
+                <p>Victor Koba</p>
+                <span>(administrador)</span>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <a href="#" class="btn-voltar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Voltar para projetos
+            </a>
+            <div class="actions-group">
+                <button class="btn btn-dark">
+                    Exportar Projeto
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                </button>
+                <button class="btn btn-dark">
+                    Visualizar escopo inicial
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                </button>
+                <button class="btn btn-light">
+                    Convidar Usuários
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                </button>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <h1 class="page-title">E-commerce Alpha</h1>
+
+            <section class="card-section">
+                <div class="card-header">
+                    <h2 class="section-title">Comentários e/ou solicitações de mudanças</h2>
+                    <div class="badge-dark">+3</div>
+                </div>
+                
+                <div class="comment-container">
+                    <div class="comment-item">
+                        <img src="https://ui-avatars.com/api/?name=Andre&background=e2e8f0&color=334155" class="avatar" alt="André">
+                        <div class="comment-body">
+                            <p><strong>Solicitação de mudança:</strong> Preciso que revise o requisito RF02 e altere para o que foi pedido no escopo inicial</p>
+                            <span>André - Cliente</span>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <img src="https://ui-avatars.com/api/?name=Joao&background=e2e8f0&color=334155" class="avatar" alt="João">
+                        <div class="comment-body">
+                            <p><strong>Comentário:</strong> É necessário a finalização do requisito RF01, ler o escopo inicial e fazer a alteração do que foi pedido</p>
+                            <span>João - Responsável Projeto</span>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <img src="https://ui-avatars.com/api/?name=Joao&background=e2e8f0&color=334155" class="avatar" alt="João">
+                        <div class="comment-body">
+                            <p><strong>Comentário:</strong> É necessário a finalização do requisito RF01, ler o escopo inicial e fazer a alteração do que foi pedido</p>
+                            <span>João - Responsável Projeto</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="expand-footer toggle-accordion">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+            </section>
+
+            <section class="table-section">
+                <div class="table-toolbar">
+                    <div class="search-input-group">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" placeholder="Buscar requisitos, tags ou responsáveis nesse projeto">
+                    </div>
+                    <button class="btn btn-add">
+                        Adicionar requisito
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="text-align: left; padding-left: 32px;">Título</th>
+                                <th>Status</th>
+                                <th>Prioridade</th>
+                                <th>Responsável</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="req-title-wrapper">
+                                        <div class="req-floating-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><circle cx="12" cy="15" r="3"></circle><line x1="12" y1="12" x2="12" y2="15"></line></svg>
+                                        </div>
+                                        <div class="req-info">
+                                            <span class="req-name">RF01 - Disponibilidade</span>
+                                            <span class="req-meta">última vez alterado(a) por Victor Koba</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-yellow">Em Andamento</span></td>
+                                <td><span class="priority">Média</span></td>
+                                <td><span class="owner">Victor Koba</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-action btn-delete">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                            Excluir
+                                        </button>
+                                        <button class="btn-action btn-edit">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                            Editar
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="req-title-wrapper">
+                                        <div class="req-floating-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><circle cx="12" cy="15" r="3"></circle><line x1="12" y1="12" x2="12" y2="15"></line></svg>
+                                        </div>
+                                        <div class="req-info">
+                                            <span class="req-name">RF02 - Gestão de usuários</span>
+                                            <span class="req-meta">última vez alterado(a) por Victor Koba</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-green">Validado</span></td>
+                                <td><span class="priority">--</span></td>
+                                <td><span class="owner">Jacquys</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-action btn-delete">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                            Excluir
+                                        </button>
+                                        <button class="btn-action btn-edit">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                            Editar
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="req-title-wrapper" style="padding-left: 36px;">
+                                        <div class="req-info">
+                                            <span class="req-name">RNF01 - Edição colaborativa</span>
+                                            <span class="req-meta">última vez alterado(a) por Victor Koba</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="badge badge-blue">Esperando validação</span></td>
+                                <td><span class="priority">--</span></td>
+                                <td><span class="owner">João Gustavo</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="btn-action btn-delete">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                            Excluir
+                                        </button>
+                                        <button class="btn-action btn-edit">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                            Editar
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="expand-footer toggle-accordion">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <aside class="right-panel">
+        <div class="info-widget">
+            <h3 class="widget-title">Informações do projeto</h3>
+            
+            <div class="info-row">
+                <span class="info-label">Progresso:</span>
+                <div class="progress-track">
+                    <div class="progress-fill" style="width: 52%;"></div>
+                </div>
+                <span class="info-value">52% concluído</span>
+            </div>
+
+            <div class="info-row grid-row">
+                <span class="info-label">Data de início:</span> <span class="info-value light">10/04/2026</span>
+                <span class="info-label">Data de entrega:</span> <span class="info-value light">30/06/2026</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Equipe:</span> <span class="info-value light">6 membros</span>
+            </div>
+        </div>
+
+        <div class="activity-widget">
+            <h3 class="widget-title">Feed de Atividades</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="time">2 min atrás</div>
+                    <div class="timeline-content">
+                        <img src="https://ui-avatars.com/api/?name=Victor+Koba&background=475569&color=fff" class="avatar-small" alt="User">
+                        <p><strong>Victor Koba</strong><br>editou Requisito RF01 no E-commerce Alpha</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">3 horas atrás</div>
+                    <div class="timeline-content">
+                        <img src="https://ui-avatars.com/api/?name=Joao+Pedro&background=475569&color=fff" class="avatar-small" alt="User">
+                        <p><strong>João Pedro</strong><br>editou Requisito RF02 no Projeto Beta</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">5 horas atrás</div>
+                    <div class="timeline-content">
+                        <img src="https://ui-avatars.com/api/?name=Jacquys&background=475569&color=fff" class="avatar-small" alt="User">
+                        <p><strong>Jacquys</strong><br>editou Requisito RNF15 no Projeto Abençoado</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">6 horas atrás</div>
+                    <div class="timeline-content">
+                        <img src="https://ui-avatars.com/api/?name=Jhonatas&background=475569&color=fff" class="avatar-small" alt="User">
+                        <p><strong>Jhônatas</strong><br>editou Requisito RF01 no E-commerce Alpha</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">8 horas atrás</div>
+                    <div class="timeline-content">
+                        <img src="https://ui-avatars.com/api/?name=Ana+Livia&background=475569&color=fff" class="avatar-small" alt="User">
+                        <p><strong>Ana Lívia</strong><br>editou Requisito RF02 no Projeto Beta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+</body>
+</html>
